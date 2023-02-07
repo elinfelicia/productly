@@ -5,34 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44ff6c67ff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/index.css">
     <title>Productly</title>
 </head>
 <body>
     <header>
-        <nav>
-            <img src="images/logo.png" alt="logo" class="nav__logo">
-            <ul class="nav__list">
+        <img src="images/logo.png" alt="productly logo" class="navbar__logo logo">
+        <nav class="navbar">
+            <ul class="navbar__list">
                 <li><a href="#">Product</a></li>
                 <li><a href="#">Customers</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Resources</a></li>
             </ul>
-            <button class="nav__btn--sign-in">Sign In</button>
+            <button class="navbar__btn--sign-in">Sign In</button>
             <button class="btn--sign-up">Sign Up</button>
         </nav>
     </header>
     <main>
         <section class="sect-1">
             <div class="sect-1__info">
-                <h1 class="sect-1__title">The Design Thinking superpowers</h1>
-                <p class="sect-1__info main__info">
+                <h1 class="info__title--large">The Design Thinking superpowers</h1>
+                <p class="info__text">
                     Tools, tutorials, design and innovation experts, all in one place! 
                     The most intuitive way to imagine your next user experience.</p>
-                <div class="sect-1__action">
-                    <button class="btn--sign-up"></button>
-                    <a href="#">Watch the Video</a><!--insert PLAY icon-->
+                <div class="info__action">
+                    <button class="btn--sign-up">Get started</button>
+                    <a href="#"><i class="fa-solid fa-play"></i>Watch the Video</a>
                 </div>
             </div>
             <div class="section-1__img">
@@ -40,45 +41,45 @@
             </div>
         </section>
         <section class="sect-2">
-            <h2 class="sect-2__title"></h2>
+            <h2 class="sect-2__title">We design tools to unveil your superpowers</h2>
             <div class="sect-2__info">
                 <div>
                     <img src="images/icon-1.png" alt="cursor icon" class="sect-2__icon">
-                    <h3 class="sect-2__sub-head"></h3>
-                    <p class="sect-2__text"></p>
+                    <h3 class="info__sub-head--large">First click tests</h3>
+                    <p class="info__text">While most people enjoy casino gambling,</p>
                 </div>
                 <div>
                     <img src="images/icon-2.png" alt="design icon" class="sect-2__icon">
-                    <h3 class="sect-2__sub-head"></h3>
-                    <p class="sect-2__text"></p>
+                    <h3 class="info__sub-head--large">Design surveys</h3>
+                    <p class="info__text">Sports betting, lottery and bingo playing for the fun</p>
                 </div>
                 <div>
                     <img src="images/icon-3.png" alt="heart icon" class="sect-2__icon">
-                    <h3 class="sect-2__sub-head"></h3>
-                    <p class="sect-2__text"></p>
+                    <h3 class="info__sub-head--large">Preference tests</h3>
+                    <p class="info__text">The Myspace page defines the individual.</p>
                 </div>
                 <div>
                     <img src="images/icon-4.png" alt="hourglass icon" class="sect-2__icon">
-                    <h3 class="sect-2__sub-head"></h3>
-                    <p class="sect-2__text"></p>
+                    <h3 class="info__sub-head--large">Five second tests</h3>
+                    <p class="info__text">Personal choices and the overall personality of the person. </p>
                 </div>
             </div>
             <button class="btn--sign-up">SIGN UP NOW</button>
         </section>
         <section class="sect-3">
             <div class="sect-3__info">
-                <p class="sect-3__text">Effortless validation for</p>
-                <h2 class="sect-3__title">Design Professionals</h2>
-                <p class="sect-3__text">The Myspace page defines the individual, his or her characteristics, 
+                <p class="info__text">Effortless validation for</p>
+                <h2 class="info__title">Design Professionals</h2>
+                <p class="info__text">The Myspace page defines the individual, his or her characteristics, 
                     traits, personal choices and the overall personality of the person. </p>
-                <h6 class="sect-3__sub-head">Accessory makers</h6>
-                <p class="sect-3__text">While most people enjoy casino gambling, sports betting, lottery and 
+                <h6 class="info__sub-head--small">Accessory makers</h6>
+                <p class="info__text">While most people enjoy casino gambling, sports betting, lottery and 
                     bingo playing for the fun</p>
-                <h6 class="sect-3__sub-head">Alterationists</h6>
-                <p class="sect-3__text">If you are looking for a new way to promote your business that won't 
+                <h6 class="info__sub-head--small">Alterationists</h6>
+                <p class="info__text">If you are looking for a new way to promote your business that won't 
                     cost you more money, </p>
-                <h6 class="sect-3__sub-head">Custom Design designers</h6>
-                <p class="sect-3__text">If you are looking for a new way to promote your business that won't 
+                <h6 class="info__sub-head--small">Custom Design designers</h6>
+                <p class="info__text">If you are looking for a new way to promote your business that won't 
                     cost you more money, </p>
             </div>
             <div class="sect-3__img">
@@ -87,30 +88,66 @@
         </section>
         <section class="sect-4">
             <div class="sect-4__img">
-                <img src="images/img-3" alt="man working on laptop">
+                <img src="images/img-3.jpg" alt="man working on laptop">
             </div>
             <div class="sect-4__info">
-                <p class="sect-4__text">Easier decision making for</p>
-                <h2 class="sect-4__title">Product Managers</h2>
-                <p class="sect-4__text">The Myspace page defines the individual, his or her characteristics, 
+                <p class="info__text">Easier decision making for</p>
+                <h2 class="info__title">Product Managers</h2>
+                <p class="info__text">The Myspace page defines the individual, his or her characteristics, 
                     traits, personal choices and the overall personality of the person. </p>
                 <div>
-                    <p class="sect-4__checkbox"></p> <!--INSERT CHECK MARK-->
-                    <p class="sect-4__text">Never worry about overpaying for your energy again. </p>
+                    <p class="sect-4__checkbox"><i class="fa-solid fa-check"></i></p>
+                    <p class="info__text">Never worry about overpaying for your energy again. </p>
                 </div>
                 <div>
-                    <p class="sect-4__checkbox"></p> <!--INSERT CHECK MARK-->
-                    <p class="sect-4__text">We will only switch you to energy companies that we trust and will treat you right</p>
+                    <p class="sect-4__checkbox"><i class="fa-solid fa-check"></i></p>
+                    <p class="info__text">We will only switch you to energy companies that we trust and will treat you right</p>
                 </div>
                 <div>
-                    <p class="sect-4__checkbox"></p> <!--INSERT CHECK MARK-->
-                    <p class="sect-4__text">We track the markets daily and know where the savings are.</p>
+                    <p class="sect-4__checkbox"><i class="fa-solid fa-check"></i></p>
+                    <p class="info__text">We track the markets daily and know where the savings are.</p>
                 </div>
             </div>
         </section>
         <section class="sect-5">
-            
+            <div class="sect-5__info">
+                <p class="info__text">Optimisation for</p>
+                <h2 class="info__title">Marketers</h2>
+                <p class="info__text">Few would argue that, despite the advancements of feminism over the past three decades, 
+                    women still face a double standard when it comes to their behavior.  </p>
+                <h6 class="info__sub-head--small">Accessory makers</h6>
+                <p class="info__text">While most people enjoy casino gambling, sports betting, lottery and 
+                    bingo playing for the fun</p>
+                <h6 class="info__sub-head--small">Alterationists</h6>
+                <p class="info__text">If you are looking for a new way to promote your business that won't 
+                    cost you more money, </p>
+                <h6 class="info__sub-head--small">Custom Design designers</h6>
+                <p class="info__text">If you are looking for a new way to promote your business that won't 
+                    cost you more money, </p>
+            </div>
+            <div class="sect-5__img">
+                <img src="images/img-4.jpg" alt="man using smartboard">
+            </div>
         </section>
     </main>
+    <footer class="footer">
+        <img src="images/logo.png" alt="productly logo" class="footer__logo logo">
+        <ul class="footer__nav">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <ul class="footer__nav">
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Financing</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+        <div class="footer__sign-up">
+            <input class="footer__email-input">
+            <button class="btn--sign-up">Sign up Now</button>
+        </div>
+    </footer>
 </body>
 </html>
